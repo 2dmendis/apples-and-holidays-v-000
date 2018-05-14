@@ -106,7 +106,7 @@ def all_supplies_in_holidays(holiday_hash)
     holiday_info.each do |holiday, supplies|
       holiday = holiday.to_s
       new_holiday = holiday.tr(':', '')
-      new_holiday = new_holiday.capitalize
+      new_holiday = new_holiday.titleize
       new_holiday = new_holiday.split(/_/)
       new_holiday = new_holiday.join(" ")
       
