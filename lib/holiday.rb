@@ -100,35 +100,33 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday_info|
     season = season.to_s 
     binding.pry
-    new_season = season.tr(':', '')
-    new_season = "#{new_season}:"
-    new_season = new_season.capitalize 
-    puts "#{new_season}" 
+    #new_season = season.tr(':', '')
+    #new_season = "#{new_season}:"
+    #new_season = new_season.capitalize 
+    puts "#{new_season.capitalize}:" 
     holiday_info.each do |holiday, supplies|
-      holiday = holiday.to_s
-      new_holiday = holiday.tr(':', '')
+      new_holiday = holiday.to_s
       
       #new_holiday = new_holiday.capitalize
       new_holiday = new_holiday.split(/_/)
-      new_holiday = new_holiday.join(" ")
-      new_holiday = new_holiday.split(' ').map {|w| w.capitalize }.join(' ')
       
-      print "  #{new_holiday}: "
+      new_holiday = new_holiday.map {|w| w.capitalize }.join(' ')
+      new_holiday =  "  #{new_holiday}: "
       supplies.each do |i|
-        i = i.to_s
-        new_i = i.tr(':', '')
-        #new_i = new_i.capitalize
+        new_i = i.to_s
+        
+        
         new_i = new_i.split(' ').map {|w| w.capitalize }.join(' ')
-        if new_i == "Bbq"
-          new_i = new_i.upcase
-        end 
-        count += 1 
-        if count == 1 
-          print "#{new_i}"
-          count += 1
-        elsif count == 3
-          print ", #{new_i}"
-        end 
+        #if new_i == "Bbq"
+          #new_i = new_i.upcase
+        #end 
+        # count += 1 
+        # if count == 1 
+        #   print "#{new_i}"
+        #   count += 1
+        # elsif count == 3
+        #   print ", #{new_i}"
+        # end 
         
          
       end 
