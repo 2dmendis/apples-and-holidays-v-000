@@ -112,7 +112,7 @@ def all_supplies_in_holidays(holiday_hash)
       new_holiday = new_holiday.join(" ")
       new_holiday = new_holiday.split(' ').map {|w| w.capitalize }.join(' ')
       
-      print "   #{new_holiday}: "
+      print "  #{new_holiday}: "
       supplies.each do |i|
         i = i.to_s
         new_i = i.tr(':', '')
