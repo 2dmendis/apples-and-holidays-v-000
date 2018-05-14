@@ -99,7 +99,7 @@ def all_supplies_in_holidays(holiday_hash)
   count = 0 
   holiday_hash.each do |season, holiday_info|
     season = season.to_s 
-    binding.pry
+    
     #new_season = season.tr(':', '')
     #new_season = "#{new_season}:"
     #new_season = new_season.capitalize 
