@@ -98,7 +98,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   count = 0 
   holiday_hash.each do |season, holiday_info|
-    season = season.to_s 
+    new_season = season.to_s 
     
     #new_season = season.tr(':', '')
     #new_season = "#{new_season}:"
