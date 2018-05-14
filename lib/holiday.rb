@@ -116,7 +116,8 @@ def all_supplies_in_holidays(holiday_hash)
       supplies.each do |i|
         i = i.to_s
         new_i = i.tr(':', '')
-        new_i = new_i.capitalize
+        #new_i = new_i.capitalize
+        new_i = new_i.split(' ').map {|w| w.capitalize }.join(' ')
         count += 1 
         if count == 1 
           print "#{new_i}"
