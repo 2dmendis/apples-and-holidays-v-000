@@ -120,13 +120,13 @@ def all_supplies_in_holidays(holiday_hash)
         #if new_i == "Bbq"
           #new_i = new_i.upcase
         #end 
-        # count += 1 
-        # if count == 1 
-        #   print "#{new_i}"
-        #   count += 1
-        # elsif count == 3
-        #   print ", #{new_i}"
-        # end 
+         count += 1 
+         if count == 1 
+           new_i = new_i 
+           count += 1
+         elsif count == 3
+           print ", #{new_i}"
+         end 
         new_holiday = "#{new_holiday} #{new_i}"
          
       end 
