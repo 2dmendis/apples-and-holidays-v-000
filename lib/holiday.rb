@@ -127,7 +127,7 @@ def all_supplies_in_holidays(holiday_hash)
          elsif count == 3
            new_i =  ", #{new_i}"
          end 
-        new_holiday = "#{new_holiday} #{new_i}"
+        new_holiday = "#{new_holiday}#{new_i}"
          
       end 
       count = 0 
