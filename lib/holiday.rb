@@ -107,6 +107,7 @@ def all_supplies_in_holidays(holiday_hash)
       holiday = holiday.to_s
       new_holiday = holiday.tr(':', '')
       new_holiday = new_holiday.capitalize
+      new_holiday = new_holiday.split(/_/)
       
       print "  #{new_holiday}: "
       supplies.each do |i|
