@@ -118,6 +118,9 @@ def all_supplies_in_holidays(holiday_hash)
         new_i = i.tr(':', '')
         #new_i = new_i.capitalize
         new_i = new_i.split(' ').map {|w| w.capitalize }.join(' ')
+        if new_i == "Bbq"
+          new_i = new_i.upcase
+        end 
         count += 1 
         if count == 1 
           print "#{new_i}"
