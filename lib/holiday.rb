@@ -102,7 +102,7 @@ def all_supplies_in_holidays(holiday_hash)
     new_season = season.tr(':', '')
     new_season = "#{new_season}:"
     new_season = new_season.capitalize 
-    print "#{new_season}\n" 
+    puts "#{new_season}" 
     holiday_info.each do |holiday, supplies|
       holiday = holiday.to_s
       new_holiday = holiday.tr(':', '')
